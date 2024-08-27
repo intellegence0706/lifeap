@@ -10216,6 +10216,13 @@ html.has-scroll-dragging {
     content: "0" counter(numbering)
 }
 
+#p-recruit .c-numbering__title:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
 .wp-pagenavi {
     --pagenation-bg-color: #fff;
     display: flex;
@@ -21658,7 +21665,7 @@ html.has-scroll-dragging {
     padding-top: 300px;
     padding-bottom: 300px;
     overflow: hidden;
-    background: linear-gradient(180deg, #292623, #22201d)
+    background: #F76934;
 }
 
 #p-recruit #entry-btn .entry-btn__bg--noize {
