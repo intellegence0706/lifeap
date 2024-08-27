@@ -47,11 +47,11 @@
 }
 
 .__red {
-    color: #F76934;
+    color: #F76934!important;
 }
 
 .__white {
-    color: white;
+    color: white!important;
 }
 
 .__black {
