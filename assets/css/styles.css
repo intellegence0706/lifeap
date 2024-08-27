@@ -18119,8 +18119,8 @@ html.has-scroll-dragging {
 }
 
 #l-footer .l-footer__bg {
-    min-height: calc(100vh + 100px);
-    padding: 180px 0 30px;
+    height: auto;
+    padding: 0 0 30px;
     background: linear-gradient(180deg, #292623, #22201d);
     color: #fff
 }
