@@ -182,8 +182,8 @@
     position: relative; /* This makes the absolute positioning of the submenu relative to this item */
 }
 
-.l-gnav__item .submenu {
-    display: none; /* Hide submenu by default */
+/* .l-gnav__item .submenu {
+    display: none; 
     position: absolute;
     left: 0;
     top: 100%;
@@ -196,5 +196,49 @@
 }
 
 .l-gnav__item:hover .submenu {
-    display: block; /* Show submenu on hover */
+    display: block; 
+} */
+
+/* .l-gnav__item .submenu {
+    opacity: 0; 
+    visibility: hidden; 
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: white;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    width: max-content;
+    padding: 20px;
+    padding-left: 40px;
+    transition: opacity 0.3s ease, visibility 0.3s ease; 
 }
+
+.l-gnav__item:hover .submenu {
+    opacity: 1; 
+    visibility: visible;
+} */
+
+.l-gnav__item .submenu {
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0; /* 初期状態で高さを0にする */
+    overflow: hidden; /* 中の要素が見えないようにする */
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: white;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    width: max-content;
+    transition: opacity 0.6s ease, visibility 0.3s ease, max-height 1s ease; /* max-heightをアニメーションさせる */
+    padding: 20px 40px;
+}
+
+.l-gnav__item:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+    max-height: 500px; /* 必要な高さに変更（調整可能） */
+    padding: 20px 40px; /* フル表示時に縦のパディングを追加 */
+}
+
